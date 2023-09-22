@@ -11,7 +11,7 @@ class ListNamaView extends StatelessWidget {
         title: const Text("Daftar Nama"),
       ),
       body: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
+        if (constraints.maxWidth > 600) {
           return const WideLayout();
         } else {
           return const NarrowLayout();
